@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+html,
+ul,
+li,
+a,
+button {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Start header */
+header {}
+
+
+header .navbar-collapse {
+    flex-grow: 0;
+}
+
+nav .menu-navbar-custom {
+    align-items: center;
+}
+
+nav .menu-navbar-custom li:not(:last-child) {
+    margin-right: 0.5rem;
+}
+
+nav .menu-navbar-custom a {
+    padding: 16px 12px !important;
+    line-height: 24px;
+    color: var(--text-gray);
+}
+
+nav .navbar-nav .nav-link.active {
+    color: var(--primary) !important;
+}
+
+nav .menu-navbar-custom a i {
+    position: relative;
+    padding-left: 0.25rem;
+    width: 1rem;
+    height: 1rem;
+    font-size: 0.6rem;
+    color: var(--text-gray);
+}
+
+nav li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav .menu-navbar-custom a i::before {
+    position: absolute;
+    top: 40%;
+}
+
+nav .nav-divider {
+    height: 2rem;
+    border-left: 0.1rem solid rgba(0, 34, 28, 0.1);
+    margin: 0 0.5rem;
+}
+
+nav .btn-log-in {
+    background-color: #fff;
+    border: 1px solid #fff;
+
+}
+
+nav .btn-log-in:hover {
+    color: #008060;
+    background-color: rgba(0, 128, 96, .1);
+    border: 1px solid rgba(0, 128, 96, .1);
+}
+
+nav .btn-sign-up {
+    background-color: var(--primary);
+    color: #fff !important;
+    border: 1px solid var(--primary);
+}
+
+nav .btn-sign-up:hover {
+    background-color: #006d52;
+    border: 1px solid #006d52;
+}
+
+nav li a.btn {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 9.8px 16px !important;
+}
+
+nav a.btn-sign-up i {
+    margin-right: 6px;
+}
+
+nav a.btn-sign-up i::before {
+    top: 15%;
+    left: 0;
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* End header */
