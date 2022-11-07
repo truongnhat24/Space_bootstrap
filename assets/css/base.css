@@ -3,5 +3,7 @@
     --text-gray: #51596C;
     --title-black: #00221C;
     --detail-text: #677788;
-    --footer: #005C45;
+    --secondary: #005C45;
+    --font-weight: 500 !important;
 }
+
