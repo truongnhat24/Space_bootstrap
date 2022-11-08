@@ -5,5 +5,46 @@
     --detail-text: #677788;
     --secondary: #005C45;
     --font-weight: 500 !important;
+    --link-hover-color: #005c45;
 }
 
+.mb-7 {
+    margin-bottom: 3rem;
+}
+
+.my-10 {
+    margin-top: 4.5rem !important;
+    margin-bottom: 4.5rem !important;
+}
+
+.fs-18 {
+    font-size: 1.125rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #008060;
+    --bs-btn-border-color: #008060;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #006d52;
+    --bs-btn-hover-border-color: #00664d;
+    --bs-btn-focus-shadow-rgb: 38,147,120;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #00664d;
+    --bs-btn-active-border-color: #006048;
+    --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #008060;
+    --bs-btn-disabled-border-color: #008060;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 4px 11px rgb(0 128 96 / 35%);
+}
+
+.btn {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-family: 'Roboto', sans-serif;
+}

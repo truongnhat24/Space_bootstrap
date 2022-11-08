@@ -9,10 +9,7 @@ html {
 }
 
 html, h1, h2, h3, h4, h5, h6, p,
-ul, label, input,
-li,
-a,
-button {
+ul, label, input, li, a, button {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
@@ -26,13 +23,7 @@ button {
     color: rgba(255, 255, 255, 0.7) !important;
 }
 
-.ms-2px {
-
-}
 /* Start header */
-header {}
-
-
 header .navbar-collapse {
     flex-grow: 0;
 }
@@ -84,7 +75,6 @@ nav .nav-divider {
 nav .btn-log-in {
     background-color: #fff;
     border: 1px solid #fff;
-
 }
 
 nav .btn-log-in:hover {
@@ -128,21 +118,10 @@ main .slider {
     background-color: var(--secondary);
 }
 
-.space-large {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-
-}
-
 .slider h1 {
     margin-bottom: 2rem;
     font-size: 4rem;
     font-weight: 600;
-    
-}
-
-.slider h6 {
-    font-size: 1.125rem !important;
 }
 
 .svg-icon > svg {
@@ -172,21 +151,36 @@ main .slider {
 
 .form-body input {
     padding: 0.75rem 1rem;
+}
+
+.form-body input::placeholder {
     font-size: 1.125rem;
 }
-/* 
-.form-body input::placeholder {
-    color: rgb(155, 155, 155);
-} */
 
 .form-body input:focus {
-    border: none;
+    outline: none;
+    border: 1px solid #ced4da;
     box-shadow: 0px 0px 15px 5px rgb(230, 230, 230);
-    outline: 1px rgb(158, 158, 158);
+}
+
+.form-body .form-check-contain {
+    padding: 0.75rem 1rem;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
 }
 
 .form-body .form-check .form-check-input {
     margin: 0;
+}
+
+.form-body .form-check-contain .form-check-input,
+.form-body .form-check-contain .form-check-label {
+    margin-bottom: 0.125rem;
+}
+
+.form-check {
+    padding-left: 0.75rem;
 }
 
 .form-check input {
@@ -198,4 +192,36 @@ main .slider {
 .form-check .form-check-label {
     font-size: 1.125rem;
 }
+
+.form-check-input:checked[type=radio] {
+    /* background-image: url(/assets/img/check-mark-black-outline-svgrepo-com.svg); */
+    background-image:url("data:image/svg+xml,<svg viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M13.3035 4.76425C13.5718 4.44865 14.0451 4.41027 14.3607 4.67853C14.6763 4.9468 14.7147 5.42012 14.4464 5.73572L8.07144 13.2357C7.79896 13.5563 7.31616 13.5901 7.00171 13.3105L3.62671 10.3105C3.31713 10.0354 3.28924 9.5613 3.56443 9.25172C3.83962 8.94213 4.31367 8.91424 4.62326 9.18943L7.42515 11.68L13.3035 4.76425Z' fill='#fff'/></svg>");
+}
+
+.form-check-input:checked {
+    background-color: #008060;
+    border-color: #008060;
+}
+
+.form-body .form-help {
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--text-gray);
+    font-weight: 400;
+}
+
+.form-body .form-help a {
+    color: var(--primary);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.form-help a:hover {
+    color: var(--link-hover-color);
+}
+
+.feed-back p {
+    font-size: 1.25rem;   
+}
+
 /* End main */
