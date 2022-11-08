@@ -10,7 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap">
     <link rel="stylesheet" href="./assets/font/fontawesome-free-6.2.0-web/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
@@ -22,7 +22,7 @@
             <a class="navbar-brand" href="#">
                 <img src="./assets/img/logo.svg" alt="Logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler p-2 fs-6" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -95,63 +95,71 @@
                     </li>
 
                     <li>
-                        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                            aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                             <div class="modal-dialog modal-dialog-centered">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Show a second modal and hide this one with the button below.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2"
+                                            data-bs-toggle="modal">Open second modal</button>
+                                    </div>
                                 </div>
-                                <div class="modal-body">
-                                  Show a second modal and hide this one with the button below.
-                                </div>
-                                <div class="modal-footer">
-                                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second modal</button>
-                                </div>
-                              </div>
                             </div>
-                          </div>
-                          <a class="btn btn-primary btn-log-in" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Log in</a>
+                        </div>
+                        <a class="btn btn-primary btn-log-in" data-bs-toggle="modal" href="#exampleModalToggle"
+                            role="button">Log in</a>
                     </li>
                     <li>
-                        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                          <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                                Show a second modal and hide this one with the button below.
-                              </div>
-                              <div class="modal-footer">
-                                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second modal</button>
-                              </div>
+                        <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                            aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Show a second modal and hide this one with the button below.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2"
+                                            data-bs-toggle="modal">Open second modal</button>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
                         </div>
-                        <a class="btn btn-primary btn-sign-up " data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                        <a class="btn btn-primary btn-sign-up " data-bs-toggle="modal" href="#exampleModalToggle"
+                            role="button">
                             <i class="fa-regular fa-circle-user"></i>
                             Sign up
                         </a>
                     </li>
-                </ul>                
+                </ul>
             </nav>
         </section>
     </header>
 
     <main>
-        <section class="slider">
+        <section class="slider position-relative">
             <section class="container space-large">
-                <section class="row d-flex justify-content-center align-items-center" >
-                    <div class="col-lg-6">
+                <section class="row d-flex justify-content-center align-items-center">
+                    <div class="col-md-8 col-lg-6">
                         <div class="pe-lg-3 mb-7">
                             <h1 class="text-white">
-                                Solving problems for every 
+                                Solving problems for every
                                 <span>team.|</span>
                             </h1>
                             <p class="text-white-70 fs-4 mb-5">
-                                Built on standard web technology, teams use Space to build beautiful 
+                                Built on standard web technology, teams use Space to build beautiful
                                 cross-platform hybrid apps in a fraction of the time.
                             </p>
                         </div>
@@ -159,14 +167,19 @@
                             <div class="d-flex col-sm-6">
                                 <div class="flex-shrink-0">
                                     <span class="svg-icon text-white">
-                                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1671 18.1421C22.4827 18.4577 23.0222 18.2331 23.0206 17.7868L23.0039 13.1053V5.52632C23.0039 4.13107 21.8729 3 20.4776 3H8.68815C7.2929 3 6.16183 4.13107 6.16183 5.52632V9H13C14.6568 9 16 10.3431 16 12V15.6316H19.6565L22.1671 18.1421Z" fill="#fff" />
-                                        <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M1.98508 18V13C1.98508 11.8954 2.88051 11 3.98508 11H11.9851C13.0896 11 13.9851 11.8954 13.9851 13V18C13.9851 19.1046 13.0896 20 11.9851 20H4.10081L2.85695 21.1905C2.53895 21.4949 2.01123 21.2695 2.01123 20.8293V18.3243C1.99402 18.2187 1.98508 18.1104 1.98508 18ZM5.99999 14.5C5.99999 14.2239 6.22385 14 6.49999 14H11.5C11.7761 14 12 14.2239 12 14.5C12 14.7761 11.7761 15 11.5 15H6.49999C6.22385 15 5.99999 14.7761 5.99999 14.5ZM9.49999 16C9.22385 16 8.99999 16.2239 8.99999 16.5C8.99999 16.7761 9.22385 17 9.49999 17H11.5C11.7761 17 12 16.7761 12 16.5C12 16.2239 11.7761 16 11.5 16H9.49999Z" fill="rgba(255,255,255,.7)" />
-                                      </svg>            
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M22.1671 18.1421C22.4827 18.4577 23.0222 18.2331 23.0206 17.7868L23.0039 13.1053V5.52632C23.0039 4.13107 21.8729 3 20.4776 3H8.68815C7.2929 3 6.16183 4.13107 6.16183 5.52632V9H13C14.6568 9 16 10.3431 16 12V15.6316H19.6565L22.1671 18.1421Z"
+                                                fill="#fff" />
+                                            <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1.98508 18V13C1.98508 11.8954 2.88051 11 3.98508 11H11.9851C13.0896 11 13.9851 11.8954 13.9851 13V18C13.9851 19.1046 13.0896 20 11.9851 20H4.10081L2.85695 21.1905C2.53895 21.4949 2.01123 21.2695 2.01123 20.8293V18.3243C1.99402 18.2187 1.98508 18.1104 1.98508 18ZM5.99999 14.5C5.99999 14.2239 6.22385 14 6.49999 14H11.5C11.7761 14 12 14.2239 12 14.5C12 14.7761 11.7761 15 11.5 15H6.49999C6.22385 15 5.99999 14.7761 5.99999 14.5ZM9.49999 16C9.22385 16 8.99999 16.2239 8.99999 16.5C8.99999 16.7761 9.22385 17 9.49999 17H11.5C11.7761 17 12 16.7761 12 16.5C12 16.2239 11.7761 16 11.5 16H9.49999Z"
+                                                fill="rgba(255,255,255,.7)" />
+                                        </svg>
                                     </span>
                                 </div>
                                 <div class="flex-grow-1 ms-4">
-                                    <h6 class="text-white">
+                                    <h6 class="text-white fs-18">
                                         24 hours
                                     </h6>
                                     <span class="text-white-70">
@@ -177,14 +190,19 @@
                             <div class="d-flex col-sm-6">
                                 <div class="flex-shrink-0">
                                     <span class="svg-icon text-white">
-                                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path opacity="0.3" d="M4.875 20.75C4.63542 20.75 4.39583 20.6542 4.20417 20.4625L2.2875 18.5458C1.90417 18.1625 1.90417 17.5875 2.2875 17.2042C2.67083 16.8208 3.29375 16.8208 3.62917 17.2042L4.875 18.45L8.0375 15.2875C8.42083 14.9042 8.99583 14.9042 9.37917 15.2875C9.7625 15.6708 9.7625 16.2458 9.37917 16.6292L5.54583 20.4625C5.35417 20.6542 5.11458 20.75 4.875 20.75Z" fill="rgba(255,255,255,.7)" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 3C3.34315 3 2 4.34315 2 6V11.865C3.04486 11.3127 4.23591 11 5.5 11C9.47412 11 12.7263 14.091 12.9836 18H18.0249L20.3178 20.2929C20.9478 20.9229 22.0249 20.4767 22.0249 19.5858V15L22 15.0098L22 15V6C22 4.34315 20.6569 3 19 3H5ZM6 7C5.44772 7 5 7.44772 5 8C5 8.55228 5.44771 9 6 9H15C15.5523 9 16 8.55228 16 8C16 7.44772 15.5523 7 15 7H6Z" fill="#fff" />
-                                      </svg>            
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.3"
+                                                d="M4.875 20.75C4.63542 20.75 4.39583 20.6542 4.20417 20.4625L2.2875 18.5458C1.90417 18.1625 1.90417 17.5875 2.2875 17.2042C2.67083 16.8208 3.29375 16.8208 3.62917 17.2042L4.875 18.45L8.0375 15.2875C8.42083 14.9042 8.99583 14.9042 9.37917 15.2875C9.7625 15.6708 9.7625 16.2458 9.37917 16.6292L5.54583 20.4625C5.35417 20.6542 5.11458 20.75 4.875 20.75Z"
+                                                fill="rgba(255,255,255,.7)" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M5 3C3.34315 3 2 4.34315 2 6V11.865C3.04486 11.3127 4.23591 11 5.5 11C9.47412 11 12.7263 14.091 12.9836 18H18.0249L20.3178 20.2929C20.9478 20.9229 22.0249 20.4767 22.0249 19.5858V15L22 15.0098L22 15V6C22 4.34315 20.6569 3 19 3H5ZM6 7C5.44772 7 5 7.44772 5 8C5 8.55228 5.44771 9 6 9H15C15.5523 9 16 8.55228 16 8C16 7.44772 15.5523 7 15 7H6Z"
+                                                fill="#fff" />
+                                        </svg>
                                     </span>
                                 </div>
                                 <div class="flex-grow-1 ms-4">
-                                    <h6  class="text-white fs-18">
+                                    <h6 class="text-white fs-18">
                                         92%
                                     </h6>
                                     <span class="text-white-70">
@@ -194,7 +212,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-md-8 col-lg-6">
                         <div class="ps-lg-5">
                             <div class="form-body">
                                 <div class="d-flex align-items-center row mb-5">
@@ -208,23 +226,26 @@
                                     </div>
                                     <div class="chat-picture col-sm-auto">
                                         <img src="./assets/img/oc-chatting.svg" alt="Chat">
-                                    </div>                                    
+                                    </div>
                                 </div>
 
                                 <form>
                                     <div class="mb-4">
                                         <label for="register-name" class="form-label">Your name</label>
-                                        <input type="text" class="form-control fs-18" id="register-name" aria-describedby="emailHelp" placeholder="Type your name">
+                                        <input type="text" class="form-control fs-18" id="register-name"
+                                            aria-describedby="emailHelp" placeholder="Type your name">
                                     </div>
                                     <div class="mb-4">
                                         <label for="register-email" class="form-label">Your email</label>
-                                        <input type="email" class="form-control fs-18" id="register-email" placeholder="example@site.com">
+                                        <input type="email" class="form-control fs-18" id="register-email"
+                                            placeholder="example@site.com">
                                     </div>
                                     <label for="register-email" class="mb-2">Company Size</label>
                                     <div class="row">
                                         <div class="col-sm-6 mb-4 form-check fs-18">
                                             <div class="form-check-contain d-flex">
-                                                <input class="form-check-input me-2 my-auto" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                <input class="form-check-input me-2 my-auto" type="radio"
+                                                    name="flexRadioDefault" id="flexRadioDefault1">
                                                 <label class="form-check-label " for="flexRadioDefault1">
                                                     1-10
                                                 </label>
@@ -232,28 +253,30 @@
                                         </div>
                                         <div class="col-sm-6 mb-4 form-check">
                                             <div class="form-check-contain d-flex fs-18">
-                                                <input class="form-check-input me-2 my-auto" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                                <input class="form-check-input me-2 my-auto" type="radio"
+                                                    name="flexRadioDefault" id="flexRadioDefault2" checked>
                                                 <label class="form-check-label" for="flexRadioDefault2">
                                                     More than 10
                                                 </label>
                                             </div>
                                         </div>
                                     </div>
-                                    <button type="submit" class="btn btn-primary fs-18">Start your free 30-days trial</button>
-                                    <p class="form-help mt-3">Need help? 
+                                    <button type="submit" class="btn btn-primary fs-18">Start your free 30-days
+                                        trial</button>
+                                    <p class="form-help mt-3">Need help?
                                         <a href="#">
                                             Visit our Help Center
                                             <i class="fa-solid fa-chevron-right"></i>
-                                        </a> 
+                                        </a>
                                     </p>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </section>
-                
+
                 <hr class="my-10 border-white">
-    
+
                 <section class="row feed-back">
                     <div class="col-sm-4">
                         <div class="mb-2">
@@ -294,15 +317,122 @@
                             <img src="./assets/img/google-white-50.svg" alt="google">
                         </div>
                     </div>
+
                 </section>
+            </section>
+            <!-- Start Background-->
+            <div class="position-absolute top-0 end-0">
+                <img src="./assets/img/shape-3-soft-light.svg" alt="SVG" width="500">
+            </div>
+            <div class="position-absolute bottom-0 end-0 me-10">
+                <img src="./assets/img/shape-1-soft-light.svg" alt="SVG" width="250">
+            </div>
+            <div class="position-absolute bottom-0 start-0">
+                <img src="./assets/img/shape-2-soft-light.svg" alt="SVG" width="400">
+            </div>
+            <!-- End Background -->
+        </section>
+
+        <section class="feature">
+            <section class="container">
+                <div class="">
+                    <h3 class="">Take the best path forward</h3>
+                    <p class="">Actionable strategies and business marketing advice help you to grow faster.</p>
+                </div>
+                <ul class="d-flex flex-nowrap">
+                    <li class="m-1">
+                        <a href="#" class="d-block p-3" alt="1">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <span class="svg-icon svg-icon-sm text-primary">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15.6 5.59998L20.9 10.9C21.3 11.3 21.3 11.9 20.9 12.3L17.6 15.6L11.6 9.59998L15.6 5.59998ZM2.3 12.3L7.59999 17.6L11.6 13.6L5.59999 7.59998L2.3 10.9C1.9 11.3 1.9 11.9 2.3 12.3Z"
+                                                fill="#035A4B" />
+                                            <path opacity="0.3"
+                                                d="M17.6 15.6L12.3 20.9C11.9 21.3 11.3 21.3 10.9 20.9L7.59998 17.6L13.6 11.6L17.6 15.6ZM10.9 2.3L5.59998 7.6L9.59998 11.6L15.6 5.6L12.3 2.3C11.9 1.9 11.3 1.9 10.9 2.3Z"
+                                                fill="#035A4B" />
+                                        </svg>
+
+                                    </span>
+                                </div>
+
+                                <div class="flex-grow-1 ms-3">
+                                    <h6 class="nav-title">All-in-one workspace</h6>
+                                    <p class="nav-text text-body">Create a business, whether you’ve got a fresh idea.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="m-1">
+                        <a href="#" class="d-block p-3" alt="2">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <span class="svg-icon svg-icon-sm text-primary">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.3"
+                                                d="M7 20.5L2 17.6V11.8L7 8.90002L12 11.8V17.6L7 20.5ZM21 20.8V18.5L19 17.3L17 18.5V20.8L19 22L21 20.8Z"
+                                                fill="#035A4B" />
+                                            <path d="M22 14.1V6L15 2L8 6V14.1L15 18.2L22 14.1Z" fill="#035A4B" />
+                                        </svg>
+
+                                    </span>
+                                </div>
+
+                                <div class="flex-grow-1 ms-3">
+                                    <h6 class="nav-title">Automation on a whole new level</h6>
+                                    <p class="nav-text text-body">Use automation to scale campaigns profitably and save
+                                        time doing it.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="m-1">
+                        <a href="#" class="d-block p-3" alt="3">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                  <span class="svg-icon svg-icon-sm text-primary">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path opacity="0.3" d="M21.25 18.525L13.05 21.825C12.35 22.125 11.65 22.125 10.95 21.825L2.75 18.525C1.75 18.125 1.75 16.725 2.75 16.325L4.04999 15.825L10.25 18.325C10.85 18.525 11.45 18.625 12.05 18.625C12.65 18.625 13.25 18.525 13.85 18.325L20.05 15.825L21.35 16.325C22.35 16.725 22.35 18.125 21.25 18.525ZM13.05 16.425L21.25 13.125C22.25 12.725 22.25 11.325 21.25 10.925L13.05 7.62502C12.35 7.32502 11.65 7.32502 10.95 7.62502L2.75 10.925C1.75 11.325 1.75 12.725 2.75 13.125L10.95 16.425C11.65 16.725 12.45 16.725 13.05 16.425Z" fill="#035A4B" />
+                                      <path d="M11.05 11.025L2.84998 7.725C1.84998 7.325 1.84998 5.925 2.84998 5.525L11.05 2.225C11.75 1.925 12.45 1.925 13.15 2.225L21.35 5.525C22.35 5.925 22.35 7.325 21.35 7.725L13.05 11.025C12.45 11.325 11.65 11.325 11.05 11.025Z" fill="#035A4B" />
+                                    </svg>
+                
+                                  </span>
+                                </div>
+                
+                                <div class="flex-grow-1 ms-3">
+                                  <h6 class="nav-title">Solving problems for every team</h6>
+                                  <p class="nav-text text-body">One tool for your company to share knowledge and ship projects.</p>
+                                </div>
+                              </div>
+                        </a>
+                    </li>
+                </ul>
+                <div>
+                    <div>
+                        <img src="./assets/img/img3.jpg" alt="1">
+                        <img src="./assets/img/img8.jpg" alt="1">
+                    </div>
+                    <div>
+                        <img src="./assets/img/img4.jpg" alt="2">
+                        <img src="./assets/img/img6.jpg" alt="2">
+                    </div>
+                    <div>
+                        <img src="./assets/img/img2.jpg" alt="3">
+                        <img src="./assets/img/img1.jpg" alt="3">
+                    </div>
+                </div>
             </section>
         </section>
     </main>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
