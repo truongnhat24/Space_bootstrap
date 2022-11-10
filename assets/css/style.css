@@ -10,7 +10,7 @@ html {
 
 html, h1, h2, h3, h4, h5, h6, p,
 ul, label, input, li, a, button, div {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
     margin: 0;
     padding: 0;
 }
@@ -134,8 +134,14 @@ main .slider {
 
 .slider h1 {
     margin-bottom: 2rem;
-    font-size: 4rem;
-    font-weight: 600;
+}
+
+.display-3 {
+    font-weight: 700;
+}
+
+.svg-icon {
+    display: block;
 }
 
 .svg-icon > svg {
@@ -239,4 +245,276 @@ main .slider {
     font-size: 1.25rem;   
 }
 
+/* ** Start feature */
+.feature-content .feature-content-item:not(.active) {
+    display: none;
+}
+
+.feature-content .feature-content-item.active {
+    display: block;
+}
+
+.feature ul .nav-link {
+    width: 22rem;
+    border: none;
+    border-radius: 0.3125rem;
+}
+
+.feature ul .nav-link p {
+    color: var(--text-gray);
+}
+
+.svg-icon-sm>svg {
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+.feature-content .device {
+    max-width: 1140px;
+    position: relative;
+    overflow: hidden;
+    padding: 1.75rem 0.75rem 7rem;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+}
+
+.device-mobile {
+    position: relative;
+    z-index: 1;
+    max-width: 100%;
+    width: 15rem;
+    height: auto;
+}
+
+.feature-content .device-mobile {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+}
+
+.mobile-border {
+    background: #f8fafd;
+    box-shadow: 0 2.75rem 5.5rem -3.5rem rgb(189 197 209 / 50%), 0 2rem 4rem -2rem rgb(0 34 28 / 30%), inset 0 -0.1875rem 0.3125rem 0 rgb(151 164 175 / 50%);
+    border-radius: 2rem;
+    padding: 0.3125rem;
+}
+
+.device-mobile .mobile-border img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1.6rem;
+}
+
+.device-web {
+    position: relative;
+    z-index: 1;
+    max-width: 100%;
+    width: 50rem;
+    height: auto;
+    box-shadow: 0 2.75rem 5.5rem -1rem rgb(189 197 209 / 50%), 0 2rem 4rem -1rem rgb(0 34 28 / 15%);
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature-content .device-web {
+    margin-left: auto;
+    margin-right: 5rem;
+}
+
+.device-web .device-web-header {
+    position: relative;
+    display: flex;
+    max-width: 50rem;
+    background: #fff;
+    border-bottom: 0.0625rem solid #f1f3f8;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    padding: 0.5rem 6.5rem;
+}
+
+.device-web .device-web-header-btn {
+    display: flex;
+    grid-gap: 0.25rem;
+    position: absolute;
+    top: calc(50% - 0.25rem);
+    left: 1rem;
+}
+
+.device-web .device-web-header-btn span {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #e7eaf3;
+    border-radius: 50%;
+}
+
+.device-web .device-web-header-address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #e7eaf3;
+    font-size: .5rem;
+    border-radius: 0.125rem;
+}
+
+.device-web img {
+    max-width: 100%;
+    height: auto;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+/* ** End feature */
+
+/* ** Start advise */
+.advise .advise-picture {
+    background-image: url(/assets/img/img7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.advise ul li i {
+    margin-top: 0.25rem;
+    left: 0rem;
+    top: 0;
+    font-size: 0.9rem;
+    color: var(--primary);
+}
+
+.advise a i {
+    font-size: 0.8rem;
+}
+.shape-container {
+    position: relative;
+}
+
+.shape-bottom {
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.shape {
+    position: absolute;
+    z-index: -1;
+}
+
+.shape-bottom>svg {
+    width: 100%;
+    height: auto;
+    margin-bottom: -1px;
+    transform-origin: top center;
+}
+/* ** End advise*/
+
+/* ** Start ability */
+.ability .ability-img {
+    max-width: 20rem;
+}
+
+.ability table .table-text-end {
+    text-align: right;
+}
+
+.ability table {
+    width: 100%;
+}
+
+.ability table thead tr th,
+.ability table tbody tr>* {
+    padding: 0.75rem 0.75rem;
+}
+
+.ability table tbody>* {
+    border-color: rgba(0, 34, 28, 0.1);
+    border-bottom-width: 0.0625rem;
+}
+
+.ability table tbody tr:last-child,
+.ability table thead>* {
+    border: none;
+}
+
+.ability table tr {
+    border-bottom-width: 0.0625rem;
+}
+
+.ability table thead>tr>th {
+    color: #00221c;
+    font-weight: 500;
+}
+
+.ability table tbody>tr>th {
+    color: #00221c;
+    font-weight: 400;
+}
+
+.ability table td {
+    padding: 0.75rem 0.75rem;
+}
+
+.ability table i {
+    font-size: 1.25rem;
+}
+
+.ability table td i.fa-check {
+    color: var(--primary);
+}
+
+.ability table td i.fa-x {
+    color: var(--text-gray);
+}
+
+.ability-number h2 {
+    color: var(--primary);
+}
+
+/* ** End ability */
+
+.horizon-divide {
+    max-width: 30rem;
+}
+
+
+/* ** Start resource */
+a.card {
+    min-height: 22rem;
+}
+
+.card-lg>.card-body {
+    padding: 2rem;
+}
+
+.card .badge {
+    background-color: rgba(249, 250, 252, 0.1)!important;
+}
+
+.card h4 {
+    font-size: 1.625rem;
+}
+
+.card .card-link {
+    color: #f9fafc!important;
+}
+
+.card .link-light i {
+    margin-left: 0.25rem;
+    font-size: 0.8rem;
+}
+
+.card-transition {
+    transition: all ease 0.2s;
+}
+
+.card-transition:hover {
+    transform: translateY(-0.1875rem)!important;
+}
+
+/* ** End resource */
 /* End main */

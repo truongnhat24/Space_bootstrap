@@ -1,11 +1,80 @@
-@media only screen and (min-width: 1320px){
+@media only screen and (min-width: 1320px) {
     .container {
-        max-width: 1140px ;
+        max-width: 1140px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2.125rem;
     }
 }
 
 @media only screen and (min-width: 992px) {
-    .ps-lg-5{
+    .ps-lg-5 {
         padding-left: 2rem !important;
-    }     
+    }
+
+    .mx-lg-auto {
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+
+    .mb-lg-0 {
+        margin-bottom: 0 !important;
+    }
+
+    .mb-lg-5 {
+        margin-bottom: 2rem !important;
+    }
+
+    .w-lg-65 {
+        width: 65% !important;
+    }
+
+    .w-lg-75 {
+        width: 75% !important;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .device .device-mobile {
+        margin-right: 0.5rem;
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .content-space-t-md-3 {
+        padding-top: 7.5rem !important;
+    }
+
+    .content-space-md-3 {
+        padding-top: 7.5rem !important;
+        padding-bottom: 7.5rem !important;
+    }
+
+    .mb-md-10 {
+        margin-bottom: 4.5rem!important;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .col-sm-divider>:not(:first-child) {
+        position: relative;
+    }
+    .col-sm-divider>:not(:first-child)::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0.0625rem;
+        height: 100%;
+        background-color: rgba(0,34,28,.1);
+        content: "";
+    }
 }

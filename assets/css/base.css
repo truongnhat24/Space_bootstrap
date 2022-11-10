@@ -25,6 +25,10 @@
     margin-bottom: 4.5rem !important;
 }
 
+.fs-12 {
+    font-size: 0.75rem;
+}
+
 .fs-18 {
     font-size: 1.125rem;
     font-family: 'Roboto', sans-serif;
@@ -34,10 +38,29 @@
     color: rgba(255, 255, 255, 0.7) !important;
 }
 
+.text-gray {
+    color: var(--text-gray);
+}
+
 .space-large {
     padding: 5rem 0.75rem
 }
 
+.content-space-t-1 {
+    padding-top: 4rem;
+} 
+
+.bg-soft-warning {
+    background-color: rgba(241,185,128,.1)!important;
+}
+
+.bg-primary-dark {
+    background-color: var(--secondary);
+}
+
+.text-primary-dark {
+    color: var(--secondary)!important;
+}
 
 .btn-primary {
     --bs-btn-color: #fff;
@@ -64,4 +87,13 @@
     width: 100%;
     padding: 0.75rem 1rem;
     font-family: 'Roboto', sans-serif;
+}
+
+.nav-link.active {
+    background-color: rgba(0, 189, 142, 0.1);
+}
+
+a.link {
+    font-weight: 500;
+    color: var(--primary);
 }
