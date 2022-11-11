@@ -8,6 +8,10 @@
     --link-hover-color: #005c45;
 }
 
+.p-2-rem {
+    padding: 2rem;
+}
+
 .mb-5 {
     margin-bottom: 2rem !important;
 }

@@ -515,6 +515,11 @@ a.card {
 .card-transition:hover {
     transform: translateY(-0.1875rem)!important;
 }
-
 /* ** End resource */
+
+/* ** Start more detail */
+.more-detail .detail-footer {
+    padding: 2rem;
+}
+/* ** End more detail */
 /* End main */
