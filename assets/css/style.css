@@ -547,4 +547,99 @@ a.card {
     border: none;
     border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
+
+footer .text-cap {
+    display: block;
+    color: #00221c;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.03125rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+footer .text-primary-light {
+    color: #00bd8e!important;
+}
+
+footer .list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+footer .link-sm {
+    font-size: .875rem;
+}
+
+footer .link-light {
+    color: #f9fafc!important;
+}
+
+footer .list-py-1>li:not(:last-child) {
+    padding-bottom: 0.25rem;
+}
+
+footer .list-py-1>li:not(:first-child) {
+    padding-top: 0.25rem;
+}
+
+footer .badge {
+    line-height: normal;
+}
+
+footer .bg-warning {
+    background-color: rgba(241,185,128,1) !important;
+}
+
+footer .btn-soft-light {
+    color: #f9fafc;
+    background-color: rgba(249,250,252,.1);
+}
+
+footer .btn-group span {
+    font-size: 0.8125rem;
+}
+
+footer .btn-group .btn {
+    padding: 0.5rem 0.875rem;
+}
+
+footer .btn-group .btn:focus {
+    background-color: #fff;
+}
+
+.btn-group .dropdown-menu.show {
+    padding: 0.5rem ;
+    color: #000;
+}
+
+.btn-group .dropdown-menu.show a {
+    padding: 0.5rem 0.875rem;
+
+}
+
+.btn-group .dropdown-menu.show .avatar{
+    border-radius: 50%;
+}
+
+.btn-group .dropdown-menu.show a.active {
+    background-color: #ccc;
+    border-radius: 5px;
+    color: #000;
+}
+
+.btn-group .dropdown-menu.show>a:not(:last-child) {
+    margin-bottom: 0.25rem;
+}
+
+.btn-icon.btn-sm {
+    font-size: .8125rem;
+    width: 2.3125rem;
+    height: 2.3125rem;
+}
+
+footer .list-inline-item a{
+    display: flex;
+    justify-content: center;
+}
 /* End footer */

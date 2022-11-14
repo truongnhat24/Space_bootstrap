@@ -12,6 +12,11 @@
     padding: 2rem;
 }
 
+.py-2-rem {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
 .mb-5 {
     margin-bottom: 2rem !important;
 }
