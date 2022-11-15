@@ -525,6 +525,36 @@ a.card {
 .more-detail .detail-footer {
     padding: 1.25rem 2rem;
 }
+
+.more-detail .accordion-item {
+    padding: 0;
+    border-bottom: none;
+}
+
+.more-detail .accordion-item button {
+    padding: 1.5rem 2rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.more-detail .accordion-item .accordion-body {
+    padding: 0 2rem 1.5rem;
+    background-color: rgba(0, 189, 142, 0.1);
+}
+
+.more-detail .accordion-item .accordion-body a {
+    color: var(--primary);
+}
+
+.more-detail .accordion-item button:focus {
+    box-shadow: none;
+}
+
+.more-detail .accordion-button:not(.collapsed) {    
+    background-color: rgba(0, 189, 142, 0.1);
+    color: var(--text-active-color);
+}
 /* ** End more detail */
 
 /* **Start social-logo */
@@ -565,6 +595,10 @@ footer .text-primary-light {
 footer .list-unstyled {
     padding-left: 0;
     list-style: none;
+}
+
+footer .list-unstyled  {
+
 }
 
 footer .link-sm {
