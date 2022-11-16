@@ -8,8 +8,21 @@ html {
     font-size: 100%;
 }
 
-html, h1, h2, h3, h4, h5, h6, p,
-ul, label, input, li, a, button, div {
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+label,
+input,
+li,
+a,
+button,
+div {
     font-family: 'Roboto', sans-serif !important;
     margin: 0;
     padding: 0;
@@ -23,6 +36,10 @@ a {
     text-decoration: none;
 }
 
+h3 {
+    font-size: calc(1.3375rem + 1.05vw);
+}
+
 
 /* Start header */
 header .navbar-brand {
@@ -30,8 +47,7 @@ header .navbar-brand {
     padding-bottom: 0;
 }
 
-header .navbar-toggler {
-}
+header .navbar-toggler {}
 
 header .navbar-toggler-icon {
     width: 1.125rem;
@@ -50,7 +66,7 @@ nav .menu-navbar-custom li:not(:last-child) {
     margin-right: 0.5rem;
 }
 
-nav .menu-navbar-custom a {
+nav .menu-navbar-custom li > a {
     padding: 16px 12px !important;
     line-height: 24px;
     color: var(--text-gray);
@@ -75,9 +91,29 @@ nav li {
     align-items: center;
 }
 
+nav .nav-link.active {
+    background-color: #fff;
+    color: var(--text-gray) !important;
+}
+
+nav .nav-link:hover {
+    color: var(--primary);
+}
+
 nav .menu-navbar-custom a i::before {
     position: absolute;
     top: 40%;
+}
+
+nav .menu-navbar-custom .dropdown-menu.show {
+    padding: 1rem;
+    width: auto;
+    margin-top: 0.5rem;
+}
+
+nav .dropdown-menu.show .dropdown-item {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.25rem;
 }
 
 nav .nav-divider {
@@ -133,7 +169,7 @@ main .slider {
 }
 
 .slider h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .display-3 {
@@ -144,7 +180,7 @@ main .slider {
     display: block;
 }
 
-.svg-icon > svg {
+.svg-icon>svg {
     width: 3rem;
     height: 3rem;
 }
@@ -161,7 +197,7 @@ main .slider {
     color: var(--text-gray);
 }
 
-.slider .form-body h5{
+.slider .form-body h5 {
     font-size: 1.375rem;
 }
 
@@ -242,7 +278,7 @@ main .slider {
 }
 
 .feed-back p {
-    font-size: 1.25rem;   
+    font-size: 1.25rem;
 }
 
 /* ** Start feature */
@@ -252,6 +288,55 @@ main .slider {
 
 .feature-content .feature-content-item.active {
     display: block;
+}
+
+.feature .feature-nav-container {
+    overflow: hidden;
+}
+
+.feature .feature-nav {
+    flex-wrap: nowrap;
+    scroll-behavior: smooth;
+}
+
+.feature .feature-nav-prev,
+.feature .feature-nav-next {
+    position: absolute;
+    height: 100%;
+    z-index: 1;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.feature .feature-scroller span i {
+    color: #000;
+}
+
+.feature .feature-nav .m-1:hover {
+    background-color: #ccc;
+    border-radius: 0.25rem;
+    transition: all ease 1s;
+}
+
+.feature .feature-nav-prev {
+    left: 0;
+    background-image: linear-gradient(to left, transparent, #fff);
+}
+
+.feature .feature-nav-next {
+    right: 0;
+    background-image: linear-gradient(to right, transparent, #fff);
+}
+
+.feature .feature-nav-next.show,
+.feature .feature-nav-prev.show {
+    display: flex;
+}
+
+.feature .feature-nav-prev.hide,
+.feature .feature-nav-next.hide {
+    display: none;
 }
 
 .feature ul .nav-link {
@@ -391,6 +476,7 @@ main .slider {
 .advise a i {
     font-size: 0.8rem;
 }
+
 .shape-container {
     position: relative;
 }
@@ -400,6 +486,7 @@ main .slider {
     left: 0;
     right: 0;
 }
+
 .shape {
     position: absolute;
     z-index: -1;
@@ -411,6 +498,7 @@ main .slider {
     margin-bottom: -1px;
     transform-origin: top center;
 }
+
 /* ** End advise*/
 
 /* ** Start ability */
@@ -492,7 +580,7 @@ a.card {
 }
 
 .card .badge {
-    background-color: rgba(249, 250, 252, 0.1)!important;
+    background-color: rgba(249, 250, 252, 0.1) !important;
 }
 
 .card h4 {
@@ -500,7 +588,7 @@ a.card {
 }
 
 .card .card-link {
-    color: #f9fafc!important;
+    color: #f9fafc !important;
 }
 
 .card .link-light i {
@@ -513,15 +601,18 @@ a.card {
 }
 
 .card-transition:hover {
-    transform: translateY(-0.1875rem)!important;
+    transform: translateY(-0.1875rem) !important;
 }
+
 /* ** End resource */
 
 /* ** Start more detail */
 .more-detail .detail-content {
-    box-shadow: 0rem 0.375rem 1.5rem 0rem rgba(140, 152, 164, 0.125);;
+    box-shadow: 0rem 0.375rem 1.5rem 0rem rgba(140, 152, 164, 0.125);
+    ;
     border-radius: 0.25rem;
 }
+
 .more-detail .detail-footer {
     padding: 1.25rem 2rem;
 }
@@ -551,10 +642,11 @@ a.card {
     box-shadow: none;
 }
 
-.more-detail .accordion-button:not(.collapsed) {    
+.more-detail .accordion-button:not(.collapsed) {
     background-color: rgba(0, 189, 142, 0.1);
     color: var(--text-active-color);
 }
+
 /* ** End more detail */
 
 /* **Start social-logo */
@@ -567,6 +659,7 @@ a.card {
     height: auto;
 
 }
+
 /* **End social-logo */
 
 
@@ -589,7 +682,7 @@ footer .text-cap {
 }
 
 footer .text-primary-light {
-    color: #00bd8e!important;
+    color: #00bd8e !important;
 }
 
 footer .list-unstyled {
@@ -597,16 +690,14 @@ footer .list-unstyled {
     list-style: none;
 }
 
-footer .list-unstyled  {
-
-}
+footer .list-unstyled {}
 
 footer .link-sm {
     font-size: .875rem;
 }
 
 footer .link-light {
-    color: #f9fafc!important;
+    color: #f9fafc !important;
 }
 
 footer .list-py-1>li:not(:last-child) {
@@ -622,12 +713,12 @@ footer .badge {
 }
 
 footer .bg-warning {
-    background-color: rgba(241,185,128,1) !important;
+    background-color: rgba(241, 185, 128, 1) !important;
 }
 
 footer .btn-soft-light {
     color: #f9fafc;
-    background-color: rgba(249,250,252,.1);
+    background-color: rgba(249, 250, 252, .1);
 }
 
 footer .btn-group span {
@@ -643,7 +734,7 @@ footer .btn-group .btn:focus {
 }
 
 .btn-group .dropdown-menu.show {
-    padding: 0.5rem ;
+    padding: 0.5rem;
     color: #000;
 }
 
@@ -652,7 +743,7 @@ footer .btn-group .btn:focus {
 
 }
 
-.btn-group .dropdown-menu.show .avatar{
+.btn-group .dropdown-menu.show .avatar {
     border-radius: 50%;
 }
 
@@ -672,8 +763,38 @@ footer .btn-group .btn:focus {
     height: 2.3125rem;
 }
 
-footer .list-inline-item a{
+footer .list-inline-item a {
     display: flex;
     justify-content: center;
 }
+
 /* End footer */
+
+/* Start home-button */
+.home-button {
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--secondary);
+    display: inline-flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    width: 2.875rem;
+    height: 2.875rem;
+    background-color: rgba(0, 189, 142, .1);
+    color: #008060;
+    font-size: 1rem;
+    opacity: .5;
+    border-radius: 0.3125rem;
+    transition: .3s ease-out;
+}
+
+.home-button:focus:hover,
+.home-button:hover {
+    color: #fff;
+    background-color: #008060;
+    opacity: 1;
+}
+
+/* End home-button */
