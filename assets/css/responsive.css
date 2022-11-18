@@ -124,4 +124,17 @@
         background-color: rgba(0, 34, 28, .1);
         content: "";
     }
+
+    nav .menu-landings {
+        min-width: 30rem;
+    }
+
+    nav .menu-blog {
+        min-width: 12rem;
+    }
+
+    nav .menu-docs.show {
+        min-width: 20rem;
+        max-width: 20rem;
+    }
 }

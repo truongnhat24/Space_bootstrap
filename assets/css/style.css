@@ -84,13 +84,7 @@ nav .menu-navbar-custom a i {
     font-size: 0.6rem;
     color: var(--text-gray);
 }
-
-nav li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
+ 
 nav .nav-link.active {
     background-color: #fff;
     color: var(--text-gray) !important;
@@ -146,7 +140,6 @@ nav .unset-position {
 }
 
 nav .menu-landings {
-    min-width: 30rem;
     left: -10rem;
 }
 
@@ -154,15 +147,9 @@ nav .menu-pages {
     width: 100% !important;
 }
 
-nav .menu-blog {
-    min-width: 12rem;
-}
-
 nav .menu-docs.show {
-    min-width: 20rem;
-    max-width: 20rem;
     padding: 0.5rem !important;
-    left: -0.875rem;5
+    left: -0.875rem;
 }
 
 nav .menu-docs.show .navbar-dropdown-menu-media-link {
@@ -234,6 +221,7 @@ nav a.btn-sign-up i::before {
 /* End header */
 
 /* Start main */
+/* ** Start slider */
 main .slider {
     background-color: var(--secondary);
 }
@@ -257,6 +245,10 @@ h1 span {
 .svg-icon>svg {
     width: 3rem;
     height: 3rem;
+}
+
+.slider > div img {
+    width: 100%;
 }
 
 .slider .form-body {
@@ -354,6 +346,8 @@ h1 span {
 .feed-back p {
     font-size: 1.25rem;
 }
+
+/* **End slider */
 
 /* ** Start feature */
 .feature-content .feature-content-item:not(.active) {
@@ -551,6 +545,10 @@ h1 span {
     font-size: 0.8rem;
 }
 
+.advise ul li {
+    padding-left: 2rem;
+}
+
 .shape-container {
     position: relative;
 }
@@ -578,6 +576,7 @@ h1 span {
 /* ** Start ability */
 .ability .ability-img {
     max-width: 20rem;
+    width: 100%;
 }
 
 .ability table .table-text-end {
@@ -676,6 +675,10 @@ a.card {
 
 .card-transition:hover {
     transform: translateY(-0.1875rem) !important;
+}
+
+.resource .row img {
+    width: 100%;
 }
 
 /* ** End resource */
